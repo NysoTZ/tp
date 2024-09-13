@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: black;
+    width: 100%;
+    height: 100%;
+    padding-top: 5vh;
+    background: linear-gradient(45deg, #0000 calc(25%/3), #dfdfdf 0 calc(50%/3),
+      #0000 0 calc(250%/3), #dfdfdf 0 calc(275%/3),
+      #0000 0), linear-gradient(45deg, #dfdfdf calc(25%/3), #0000 0 calc(50%/3),
+      #dfdfdf 0 25%, #0000 0 75%,
+      #dfdfdf 0 calc(250%/3), #0000 0 calc(275%/3),
+      #dfdfdf 0), linear-gradient(-45deg, #0000 calc(25%/3), #dfdfdf 0 calc(50%/3),
+      #0000 0 calc(250%/3), #dfdfdf 0 calc(275%/3),
+      #0000 0), linear-gradient(-45deg, #dfdfdf calc(25%/3), #0000 0 calc(50%/3),
+      #dfdfdf 0 25%, #0000 0 75%,
+      #dfdfdf 0 calc(250%/3), #0000 0 calc(275%/3),
+      #dfdfdf 0);
+    background-size: 88px 88px;
+    background-position: 0 0, 44px 44px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    background-color: #071013;
+    width: 100%;
+    height: 6.3vh;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: block;
+    font-size: 2.2vh;
+}
+
+nav ul li a:hover {
+    background-color: #333232;
+}
+
+.logo {
+    margin-top: 0.7vh;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    background: linear-gradient(90deg, #fefefe 1.6px, #0000 0 calc(100% - 1.6px), #fefefe 0) center/100% 11.2px,
+               linear-gradient(0deg, #fefefe 1.6px, #0000 0 calc(100% - 1.6px), #fefefe 0) center/11.2px 100%,
+               linear-gradient(#fefefe 0 0) center/100% 1.6px,
+               linear-gradient(#fefefe 0 0) center/1.6px 100%;
+    background-repeat: no-repeat;
+    animation: hypnotic-8xnm9d 4.8s infinite linear;
+}
+
+.logo::before,
+.logo::after {
+    content: "";
+    grid-area: 1/1;
+    background: inherit;
+    transform-origin: inherit;
+    animation: inherit;
+}
+
+.logo::after {
+    animation-duration: 2.4s;
+}
+
+.formulario {
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 1%;
+    width: 65vw;
+    height: 75vh;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+form {
+    padding-top: 6vh;
+    width: 75%;
+    margin: auto;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form1 {
+    padding-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.part1 {
+    display: flex;
+    width: 46%;
+    height: 10vh;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+}
+
+.form1 input {
+    border: 0;
+    border-bottom: 2px solid black;
+    height: 55%;
+}
+
+#textarea {
+    margin-top: 4vh;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 100%;
+    text-align: start;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 75%;
+    min-height: 75%;
+}
+
+#btn {
+    width: 20%;
+    margin: auto;
+    padding: 1vh;
+    border-radius: 15%;
+    background-color: black;
+    color: white;
+    margin-top: 1vh;
+}
+
+#btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+footer {
+    background: #071013;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+}
+
+.footer {
+    color: white;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+h4 {
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.f2 {
+    justify-content: space-between;
+    align-items: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    fill: white !important;
+}
+
+.footer a img {
+    height: 8vh;
+}
+
+.footer .qr {
+    width: 14vw;
+}
+
+.f3 {
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes hypnotic-8xnm9d {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@media (max-width: 1367px) {
+    nav ul li a {
+        padding: 0.5rem 1.5rem;
+        font-size: 2.7vh;
+    }
+    
+    .logo {
+        margin-top: 0.5vh;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .footer .qr {
+        width: 13vw;
+    }
+    
+    .formulario {
+        height: 79vh;
+    }
+    
+    .part2 {
+        display: flex;
+        flex-direction: column;
+        height: 45%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #btn {
+        width: 10vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li a {
+        padding: 1rem;
+        font-size: 4vw;
+    }
+    
+    .logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .formulario {
+        width: 80vw;
+        height: auto;
+    }
+    
+    .part1, .part2 {
+        width: 100%;
+    }
+    
+    #btn {
+        width: 30%;
+    }
+    
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li a {
+        padding: 1rem;
+        font-size: 5vw;
+    }
+    
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .formulario {
+        width: 90vw;
+        height: auto;
+    }
+    
+    .part1, .part2 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #btn {
+        width: 40%;
+    }
+    
+    footer {
+        height: auto;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 0.5rem;
+        font-size: 6vw;
+    }
+    
+    .logo {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .formulario {
+        width: 95vw;
+    }
+    
+    #btn {
+        width: 50%;
+    }
+}
